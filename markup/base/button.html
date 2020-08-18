@@ -1,0 +1,65 @@
+<button>Test Button</button>
+
+
+<style>
+   button:disabled,  input[type='button']:disabled,  input[type='submit']:disabled {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: .65;
+}
+
+ button:disabled:hover,  input[type='button']:disabled:hover,  input[type='submit']:disabled:hover {
+  box-shadow: unset;
+  transform: unset;
+}
+
+ button,  input[type='button'],  input[type='submit']{
+  min-width: 80px;
+  /*color: #fff !important;
+  border: 1px solid #005cbc;*/
+  display: inline-block;
+  padding: 9px 8px;
+  margin: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: -moz-linear-gradient(45deg, #7ed4ff, #005cbc);
+  background: -webkit-linear-gradient(45deg, #7ed4ff, #005cbc);
+  background: linear-gradient(45deg, #7ed4ff, #005cbc);
+  border: 1px solid #a2cefd;
+  color: #005cbc !important;
+  background: -moz-linear-gradient(45deg, #ffffff, #e8f8ff);
+  background: -webkit-linear-gradient(45deg, #ffffff, #e8f8ff);
+  background: linear-gradient(45deg, #ffffff, #e8f8ff);
+  background-size: 250% 100% !important;
+  background-position: 100% 0% !important;
+}
+
+ button:hover,  input[type='button']:hover,  input[type='submit']:hover{
+  background-position: 0% !important;
+  box-shadow: 0 0px 12px #BBB;
+  transition: all 0.3s ease;
+  transform: translateY(-1px);
+}
+
+ button:active,  input[type='button']:active,  input[type='submit']:active{
+  transform: translateY(0);
+  background-position: 50% !important;
+}
+</style>
